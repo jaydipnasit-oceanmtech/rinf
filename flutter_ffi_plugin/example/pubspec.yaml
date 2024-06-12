@@ -27,17 +27,21 @@ environment:
 # dependencies can be manually updated by changing the version numbers below to
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
+
+#curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+#rustc --version
+#flutter pub add rinf
+#cargo install rinf
+#cd flutter_ffi_plugin/example
+#flutter pub add rinf
+#cargo install rinf
+#rinf message
+
 dependencies:
   flutter:
     sdk: flutter
 
-  rinf:
-    # When depending on this package from a real application you should use:
-    #   rinf: ^x.y.z
-    # See https://dart.dev/tools/pub/dependencies#version-constraints
-    # The example app is bundled with the plugin so we use a path dependency on
-    # the parent directory to use the current plugin's version.
-    path: ../
+  rinf: ^6.11.1
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
